@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Medias</title>
+    <input type="text" id="campoNome"></input>
+    <input type="text" id="n1"></input>
+    <input type="text" id="n2"></input>
+    <input type="text" id="n3"></input>
+    <input type="text" id="media">
+
+
+</head>
+<body>
+    
+</body>
+
+<script type="text/javascript">
+    function nome(nome) {
+       
+        if(nome ) {
+            return "nome invalido!"
+        } else( nome == "") {
+            return "nome invalido!"
+        };
+        alert ("nome invalido")
+        
+    }
+    var n1 = document.getElementById ("n1");
+    var n2 = document.getElementById ("n2");
+    var n3 = document.getElementById ("n3");
+
+    function media(n1,n2,n3) {  
+        m = ((n1 + n2 + n3)/3)
+
+
+        if(m >= 7) {
+            return "aprovado";
+            alert ("aprovado")
+        }
+
+        if ((m > 5 ) || (m < 7 )) {
+            return "recuperação";
+            alert ("recuperação")
+        
+        } else ( m <= 5); {
+            return "reprovado";
+            alert ("reprovado")
+        }
+        
+    };
+
+</script>
