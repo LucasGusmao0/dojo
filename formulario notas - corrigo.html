@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+</body>
+
+<script type="text/javascript">
+    
+    function media() {
+        var n1 =  parseFloat(prompt("Informe a 1ª nota"));
+        var n2 =  parseFloat(prompt("Informe a 2ª nota"));
+        var n3 =  parseFloat(prompt("Informe a 3ª nota"));
+       
+        n1 = n1;
+        n2 = n2;
+        n3 = n3;
+        
+        if (Number.isInteger(n1,n2,n3)) {
+            if((n1 >= 10) || (n1 < 0)) {
+               return alert ("nota incorreta")
+            }
+            if((n2 >= 10) || (n2 < 0)) {
+               return alert ("nota incorreta")
+            }
+            if((n3 >= 10) || (n3 < 0)) {
+               return alert ("nota incorreta")
+            }
+
+
+            m = ((n1 + n2 + n3)/3)
+
+            if((m >= 7) || (m <= 10)) {
+                alert ("aprovado")
+            }
+            else if ((m > 5 ) || (m < 7 )) {
+                alert ("recuperação")
+            
+            } else {
+                alert ("reprovado")
+            }
+        } else {
+            return alert ("Ops, você digitou errado, burro!")
+        }
+
+
+    }  
+    
+    media();
+</script>
